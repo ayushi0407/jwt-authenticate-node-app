@@ -2,12 +2,10 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
-const jwt = require('jsonwebtoken')
 
 const apiRoutes = require('./routes');
-const { createJwtTokens } = require('./middleware/jwtMiddleware');
+const { createJwtTokens, authenticateToken } = require('./middleware/jwtMiddleware');
 app.use(express.json());
-
 
 app.use('/api', apiRoutes(app));
 

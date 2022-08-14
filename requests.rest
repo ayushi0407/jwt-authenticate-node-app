@@ -2,5 +2,15 @@ POST http://localhost:3000/login
 Content-Type: application/json
 
 {
-    "userId": "testUser1" 
+    "userId": "testUser" 
 }
+
+###
+
+GET  http://localhost:3000/api/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0VXNlcjEyIiwiaWF0IjoxNjYwNDg2NTQwLCJleHAiOjE2NjA0ODc3NDB9.JYz0JB5PQPO40_BbJpCRVSqz8FGJqa6hJPQ0XHZRf5o
+
+###
+
+POST  http://localhost:3000/api/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0VXNlcjEyIiwiaWF0IjoxNjYwNDg2NTQwLCJleHAiOjE2NjA0ODc3NDB9.JYz0JB5PQPO40_BbJpCRVSqz8FGJqa6hJPQ0XHZRf5o
