@@ -9,12 +9,25 @@ module.exports = (authController) => {
     router.route(`${baseRoute}`)
         .get(
             authController.authenticateUser,
-            controller.getPostList
+            controller.get
         )
+
     router.route(`${baseRoute}`)
         .post(
             authController.authenticateUser,
-            controller.addPost
+            controller.post
+        )
+
+    router.route(`${baseRoute}/:identifier`)
+        .put(
+            authController.authenticateUser,
+            controller.update
+        )
+
+    router.route(`${baseRoute}/:identifier`)
+        .delete(
+            authController.authenticateUser,
+            controller.remove
         )
     
     return router;

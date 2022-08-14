@@ -2,6 +2,9 @@ require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
+const apiRoutes = require('./routes');
+const app = express();
+app.use(express.json());
 
 const { createJwtTokens } = require('./middleware/jwtMiddleware');
 
@@ -23,9 +26,6 @@ db.on('error', err => {
 db.once('open', async () => {
     console.log('Connected To', process.env.DB_URL);
 
-    const apiRoutes = require('./routes');
-    const app = express();
-    app.use(express.json());
     app.use('/api', apiRoutes(app));
 
     app.post('/login', async (req, res) => {

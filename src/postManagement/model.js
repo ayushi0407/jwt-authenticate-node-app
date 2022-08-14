@@ -11,6 +11,6 @@ const PostSchema = new mongoose.Schema({
     collection: "posts"
 });
 
-Schema.plugin(paginate);
+PostSchema.plugin(paginate);
 
 module.exports = mongoose.model("PostSchema", PostSchema);
