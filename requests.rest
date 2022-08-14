@@ -14,3 +14,23 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0V
 
 POST  http://localhost:3000/api/post
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0VXNlcjEyIiwiaWF0IjoxNjYwNDg2NTQwLCJleHAiOjE2NjA0ODc3NDB9.JYz0JB5PQPO40_BbJpCRVSqz8FGJqa6hJPQ0XHZRf5o
+
+{
+    "postName" : "test1",
+    "creadtedBy" : "ayushi.bansal0704@gmail.com",
+    "source": "UI",
+}
+
+###
+
+PUT  http://localhost:3000/api/post?identifier=xxxxxxx
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0VXNlcjEyIiwiaWF0IjoxNjYwNDg2NTQwLCJleHAiOjE2NjA0ODc3NDB9.JYz0JB5PQPO40_BbJpCRVSqz8FGJqa6hJPQ0XHZRf5o
+
+{
+    "source": "UI-2",
+}
+
+###
+ 
+DELETE  http://localhost:3000/api/post?identifier=xxxxxxx
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0VXNlcjEyIiwiaWF0IjoxNjYwNDg2NTQwLCJleHAiOjE2NjA0ODc3NDB9.JYz0JB5PQPO40_BbJpCRVSqz8FGJqa6hJPQ0XHZRf5o
